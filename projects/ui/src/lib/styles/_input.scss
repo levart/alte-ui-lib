@@ -1,0 +1,44 @@
+.alt-input {
+  border: 1px solid $alt-input-border-color;
+  border-radius: $alt-input-border-radius;
+  color: $alt-input-color;
+  font-size: $alt-input-font-size;
+  font-weight: $alt-input-font-weight;
+  height: $alt-input-height;
+  padding: $alt-input-padding;
+  width: $alt-input-width;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $alt-input-color;
+  }
+
+  &-disabled {
+    background-color: $alt-input-disabled-background-color;
+    border-color: $alt-input-disabled-border-color;
+    color: $alt-input-disabled-color;
+  }
+
+  &-sm{
+    font-size: 12px;
+    height: 30px;
+    padding: 0 5px;
+  }
+
+  &-lg{
+    font-size: 20px;
+    height: 50px;
+    padding: 0 15px;
+  }
+
+  &-borderless{
+    border: none;
+  }
+
+  &-invalid{
+    border-color: $alt-input-invalid-border-color;
+  }
+}
