@@ -1,0 +1,70 @@
+:host {
+  user-select: none;
+}
+.alt-checkbox {
+  border: 1px solid $alt-checkbox-border-color;
+  border-radius: $alt-checkbox-border-radius;
+  color: $alt-checkbox-color;
+  font-size: $alt-checkbox-font-size;
+  font-weight: $alt-checkbox-font-weight;
+  height: $alt-checkbox-height;
+  padding: $alt-checkbox-padding;
+  width: $alt-checkbox-width;
+  margin: 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $alt-checkbox-color;
+  }
+
+  &-disabled {
+    background-color: $alt-checkbox-disabled-background-color;
+    border-color: $alt-checkbox-disabled-border-color;
+    color: $alt-checkbox-disabled-color;
+  }
+
+  &-sm{
+    font-size: 12px;
+    height: 30px;
+    padding: 0 5px;
+  }
+
+  &-lg{
+    font-size: 20px;
+    height: 50px;
+    padding: 0 15px;
+  }
+
+  &-borderless{
+    border: none;
+  }
+
+  &-invalid{
+    border-color: $alt-checkbox-invalid-border-color;
+  }
+
+  &-checked{
+    background-color: $alt-checkbox-checked-background-color;
+    border-color: $alt-checkbox-checked-border-color;
+    color: $alt-checkbox-checked-color;
+    position: relative;
+
+    &:after {
+      content: "✔";
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  input {
+    display: none;
+  }
+}

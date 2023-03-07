@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,16 @@ export class AppComponent {
   inputForm = 'fsd';
   inputForm2: any;
 
+
+  checkboxForm: FormGroup = new FormGroup({
+    checkbox: new FormControl(false)
+  });
+
   disable() {
     this.disabled = !this.disabled
+  }
+
+  submit() {
+    this.checkboxForm.get('checkbox')?.setValue(!this.checkboxForm.get('checkbox')?.value)
   }
 }

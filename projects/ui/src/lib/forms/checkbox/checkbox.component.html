@@ -1,0 +1,21 @@
+<span
+  class="alt-checkbox"
+  [class.alt-checkbox-checked]="checked"
+  [class.alt-checkbox-disabled]="disabled"
+  [class.alt-checkbox-sm]="size === 'sm'"
+  [class.alt-checkbox-lg]="size === 'lg'"
+>
+  <input
+    type="checkbox"
+    [checked]="checked"
+    [ngModel]="checked"
+    [disabled]="disabled"
+    (ngModelChange)="checkedChange($event)"
+    [attr.id]="id || checkboxId"
+  >
+
+  <span class="alt-checkbox-inner"></span>
+</span>
+<span>
+  <ng-content></ng-content>
+</span>

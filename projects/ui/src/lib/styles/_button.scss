@@ -1,0 +1,80 @@
+.alt-button {
+  border: $alt-button-border;
+  border-radius: $alt-button-border-radius;
+  color: $alt-button-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $alt-button-font-size;
+  font-weight: $alt-button-font-weight;
+  height: $alt-button-height;
+  line-height: $alt-button-line-height;
+  margin: $alt-button-margin;
+  padding: $alt-button-padding;
+  text-align: center;
+  text-decoration: none;
+  text-transform: $alt-button-text-transform;
+  transition: $alt-button-transition;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    background-color: $alt-button-primary-background-color;
+    border-color: $alt-button-primary-border-color;
+    color: $alt-button-primary-color;
+
+    &:hover {
+      background-color: $alt-button-primary-hover-background-color;
+      border-color: $alt-button-primary-hover-border-color;
+      color: $alt-button-primary-hover-color;
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: $alt-button-primary-active-background-color;
+      border-color: $alt-button-primary-active-border-color;
+      color: $alt-button-primary-active-color;
+    }
+  }
+
+  &-default {
+    background-color: $alt-button-secondary-background-color;
+    border-color: $alt-button-secondary-border-color;
+    color: $alt-button-secondary-color;
+
+    &:hover {
+      background-color: $alt-button-secondary-hover-background-color;
+      border-color: $alt-button-secondary-hover-border-color;
+      color: $alt-button-secondary-hover-color;
+    }
+
+    &:active {
+      background-color: $alt-button-secondary-active-background-color;
+      border-color: $alt-button-secondary-active-border-color;
+      color: $alt-button-secondary-active-color;
+    }
+  }
+
+  &-disabled {
+    background-color: $alt-button-disabled-background-color;
+    border-color: $alt-button-disabled-border-color;
+    color: $alt-button-disabled-color;
+    cursor: not-allowed;
+  }
+
+  &-sm {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &-lg {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+  }
+}

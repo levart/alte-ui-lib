@@ -9,3 +9,33 @@
   <option value="md">Medium</option>
   <option value="lg">Large</option>
 </select>
+
+<hr>
+<label >
+  <input type="checkbox">
+  fddf
+</label>
+<br>
+
+<form  [formGroup]="checkboxForm">
+
+<label id="test-checkbox" formControlName="checkbox" alt-checkbox size="sm" [altValue]="true"  [checked]="true" [disabled]="disabled">My Checkbox</label>
+<label formControlName="checkbox" alt-checkbox [altValue]="true"  [checked]="true" [disabled]="disabled">My Checkbox</label>
+<label formControlName="checkbox" alt-checkbox [altValue]="true" size="lg"  [checked]="true" [disabled]="disabled">My Checkbox</label>
+<label formControlName="checkbox" alt-checkbox [altValue]="true"  [checked]="true" [disabled]="disabled">My Checkbox</label>
+<label formControlName="checkbox" alt-checkbox [altValue]="true"  [checked]="true" [disabled]="disabled">My Checkbox</label>
+  <hr>
+<label formControlName="checkbox" alt-radio  [checked]="true" [disabled]="disabled">My Radio</label>
+<label formControlName="checkbox" alt-radio  [checked]="true" [disabled]="disabled">My Radio</label>
+</form>
+{{checkboxForm.value | json}}
+
+<button (click)="submit()">submit</button>
+<button (click)="disable()">disable</button>
+
+
+<hr>
+<button alt-button>Button</button>
+<button alt-button altType="primary" size="sm">Button</button>
+<button alt-button altType="primary" size="lg">Button</button>
+
