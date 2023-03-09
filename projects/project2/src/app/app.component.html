@@ -39,3 +39,38 @@
 <button alt-button altType="primary" size="sm">Button</button>
 <button alt-button altType="primary" size="lg">Button</button>
 
+<hr>
+<br>
+
+<alt-form-item status="error">
+  <alt-label [altFor]="'test'" [required]="false">My Label</alt-label>
+  <input [attr.id]="'test'" [(ngModel)]="inputForm" altInput placeholder="hello" required minlength="5" [disabled]="disabled" [size]="size" prefixCls="some-input"/>
+</alt-form-item>
+
+<hr>
+<br>
+
+
+<alt-card [title]="title" [image]="imageTmp" [actions]="[action, action2, action3]">
+  <ng-template #title>
+    <h1>My Title</h1>
+  </ng-template>
+  <ng-template #imageTmp>
+    <img src="https://via.placeholder.com/150" alt="">
+  </ng-template>
+  <p>My Content</p>
+  <p>My Content</p>
+  <alt-form-item status="error">
+    <alt-label [altFor]="'test'" [required]="false">My Label</alt-label>
+    <input [attr.id]="'test'" [(ngModel)]="inputForm" altInput placeholder="hello" required minlength="5" [disabled]="disabled" [size]="size" prefixCls="some-input"/>
+  </alt-form-item>
+  <ng-template #action>
+    <button alt-button altType="primary">Action 1</button>
+  </ng-template>
+  <ng-template #action2>
+    <button alt-button altType="primary">Action 2</button>
+  </ng-template>
+  <ng-template #action3>
+    <button alt-button altType="primary">Action 3</button>
+  </ng-template>
+</alt-card>

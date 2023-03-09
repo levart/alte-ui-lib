@@ -1,0 +1,18 @@
+.alt-form-item {
+
+  &-has-success {
+    color: green;
+  }
+
+  &-has-error {
+    color: red;
+  }
+
+  &-has-warning {
+    color: yellow;
+  }
+
+  &-has-validating {
+    color: blue;
+  }
+}

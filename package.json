@@ -6,11 +6,12 @@
     "start": "ng serve",
     "start:project": "ng serve project --port 4201",
     "start:project2": "ng serve project2 --port 4202",
+    "build:ui": "ng build ui --configuration production",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
